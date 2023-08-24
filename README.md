@@ -1,0 +1,2 @@
+# olle.config
+Config central
