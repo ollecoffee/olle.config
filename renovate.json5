@@ -15,11 +15,17 @@
         "digest"
       ],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "lockFileMaintenance": {
+        "enabled": true
+      },
     },
     {
       "matchDepTypes": ["devDependencies"],
-      "automerge": true
+      "automerge": true,
+      "lockFileMaintenance": {
+        "enabled": true
+      },
     },
     {
       "description": "Disables the creation of branches/PRs for any minor/patch updates etc. of Renovate bot",
@@ -27,8 +33,6 @@
         "renovate-update-notification/Dockerfile"
       ],
       "matchUpdateTypes": [
-        "minor",
-        "patch",
         "pin",
         "digest",
         "rollback"
@@ -41,13 +45,15 @@
         "renovate-update-notification/Dockerfile"
       ],
       "matchUpdateTypes": [
+        "patch",
+        "minor",
         "major"
       ],
       "automerge": false,
       // just re-states the default and ensures that PRs are really created - you can remove this line
       // if you did not change "prCreation" elsewhere to some non-default value
       "prCreation": "immediate",
-    }
+    },
   ],
   "schedule": [
     "after 10am every weekday",
