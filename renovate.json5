@@ -8,6 +8,13 @@
   ],
   "packageRules": [
     {
+      "matchPackageNames": [
+        "npm",
+        "github-actions",
+      ],
+      "enabled": true,
+    },
+    {
       "description": "Automatically merge minor and patch-level updates",
       "matchUpdateTypes": [
         "minor",
