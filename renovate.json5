@@ -17,15 +17,25 @@
       "automerge": true,
       "automergeType": "branch",
       "lockFileMaintenance": {
-        "enabled": true
+        "enabled": true,
+        "recreateWhen": "always",
+        "rebaseStalePrs": true,
+        "branchTopic": "lock-file-maintenance",
+        "commitMessageAction": "Lock file maintenance",
+        "prBodyDefinitions": {"Change": "All locks refreshed"}
       },
     },
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
       "lockFileMaintenance": {
-        "enabled": true
-      },
+        "enabled": true,
+        "recreateWhen": "always",
+        "rebaseStalePrs": true,
+        "branchTopic": "lock-file-maintenance",
+        "commitMessageAction": "Lock file maintenance",
+        "prBodyDefinitions": {"Change": "All locks refreshed"}
+      }
     },
     {
       "description": "Disables the creation of branches/PRs for any minor/patch updates etc. of Renovate bot",
