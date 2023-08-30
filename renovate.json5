@@ -16,6 +16,8 @@
       ],
       "automerge": true,
       "automergeType": "branch",
+      "automergeSchedule": [
+        "every hour"],
       "lockFileMaintenance": {
         "enabled": true,
         "recreateWhen": "always",
@@ -28,6 +30,8 @@
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
+      "automergeSchedule": [
+        "every hour"],
       "lockFileMaintenance": {
         "enabled": true,
         "recreateWhen": "always",
