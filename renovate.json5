@@ -51,7 +51,9 @@
         "digest",
         "rollback"
       ],
-      "enabled": false
+      "automerge": true,
+      "automergeSchedule": [
+        "every hour"]
     },
     {
       "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
@@ -63,7 +65,7 @@
         "minor",
         "major"
       ],
-      "automerge": false,
+      "automerge": false
       // just re-states the default and ensures that PRs are really created - you can remove this line
       // if you did not change "prCreation" elsewhere to some non-default value
       "prCreation": "immediate",
