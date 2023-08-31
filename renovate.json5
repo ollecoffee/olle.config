@@ -17,7 +17,8 @@
       "automerge": true,
       "automergeType": "branch",
       "automergeSchedule": [
-        "every hour"],
+        "every hour",
+      ],
       "lockFileMaintenance": {
         "enabled": true,
         "recreateWhen": "always",
@@ -31,7 +32,8 @@
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
       "automergeSchedule": [
-        "every hour"],
+        "every hour",
+      ],
       "lockFileMaintenance": {
         "enabled": true,
         "recreateWhen": "always",
@@ -49,11 +51,14 @@
       "matchUpdateTypes": [
         "pin",
         "digest",
-        "rollback"
+        "rollback",
+        "minor",
+        "patch",
       ],
       "automerge": true,
       "automergeSchedule": [
-        "every hour"]
+        "every hour",
+      ]
     },
     {
       "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
@@ -61,9 +66,7 @@
         "renovate-update-notification/Dockerfile"
       ],
       "matchUpdateTypes": [
-        "patch",
-        "minor",
-        "major"
+        "major",
       ],
       "automerge": false,
       // just re-states the default and ensures that PRs are really created - you can remove this line
@@ -74,7 +77,7 @@
   "schedule": [
     "after 10am every weekday",
     "before 5pm every weekday",
-    "every weekend"
+    "every weekend",
   ],
   "timezone": "Europe/Stockholm",
   "platformAutomerge": true,
