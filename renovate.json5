@@ -78,6 +78,7 @@
     "after 10am every weekday",
     "before 5pm every weekday",
     "after 11am every weekend",
+    "before 8pm every weekend",
   ],
   "timezone": "Europe/Stockholm",
   "platformAutomerge": true,
