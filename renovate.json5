@@ -53,7 +53,7 @@
   "dependencyDashboardAutoclose": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 3pm on tuesday"],
+    "schedule": ["before 10am on monday"],
     "automerge": true,
   }
 }
