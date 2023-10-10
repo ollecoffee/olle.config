@@ -16,32 +16,10 @@
       ],
       "automerge": true,
       "automergeType": "branch",
-      "automergeSchedule": [
-        "hourly",
-      ],
-      "lockFileMaintenance": {
-        "enabled": true,
-        "recreateWhen": "always",
-        "rebaseStalePrs": true,
-        "branchTopic": "lock-file-maintenance",
-        "commitMessageAction": "Lock file maintenance",
-        "prBodyDefinitions": {"Change": "All locks refreshed"}
-      },
     },
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
-      "automergeSchedule": [
-        "hourly",
-      ],
-      "lockFileMaintenance": {
-        "enabled": true,
-        "recreateWhen": "always",
-        "rebaseStalePrs": true,
-        "branchTopic": "lock-file-maintenance",
-        "commitMessageAction": "Lock file maintenance",
-        "prBodyDefinitions": {"Change": "All locks refreshed"}
-      }
     },
     {
       "description": "Disables the creation of branches/PRs for any minor/patch updates etc. of Renovate bot",
@@ -56,9 +34,6 @@
         "patch",
       ],
       "automerge": true,
-      "automergeSchedule": [
-        "hourly",
-      ]
     },
     {
       "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
@@ -74,9 +49,6 @@
       "prCreation": "immediate",
     },
   ],
-  "schedule": [
-   "hourly",
-  ],
   "timezone": "Europe/Stockholm",
   "platformAutomerge": true,
   "rebaseWhen": "behind-base-branch",
@@ -84,4 +56,12 @@
   "dependencyDashboard": true,
   "labels": ["dependencies"],
   "dependencyDashboardAutoclose": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "recreateWhen": "always",
+    "rebaseStalePrs": true,
+    "branchTopic": "lock-file-maintenance",
+    "commitMessageAction": "Lock file maintenance",
+    "prBodyDefinitions": {"Change": "All locks refreshed"}
+  }
 }
