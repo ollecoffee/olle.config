@@ -16,6 +16,9 @@
       ],
       "automerge": true,
       "automergeType": "branch",
+      "automergeSchedule": [
+        "hourly",
+      ],
       "lockFileMaintenance": {
         "enabled": true,
         "recreateWhen": "always",
@@ -28,6 +31,9 @@
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
+      "automergeSchedule": [
+        "hourly",
+      ],
       "lockFileMaintenance": {
         "enabled": true,
         "recreateWhen": "always",
@@ -50,6 +56,9 @@
         "patch",
       ],
       "automerge": true,
+      "automergeSchedule": [
+        "hourly",
+      ]
     },
     {
       "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
@@ -64,6 +73,9 @@
       // if you did not change "prCreation" elsewhere to some non-default value
       "prCreation": "immediate",
     },
+  ],
+  "schedule": [
+   "hourly",
   ],
   "timezone": "Europe/Stockholm",
   "platformAutomerge": true,
