@@ -15,11 +15,14 @@
         "digest"
       ],
       "automerge": true,
-      "automergeType": "branch",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days",
     },
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days",
     },
     {
       "description": "Disables the creation of branches/PRs for any minor/patch updates etc. of Renovate bot",
@@ -44,6 +47,7 @@
         "major",
       ],
       "automerge": false,
+      "minimumReleaseAge": "7 days"
     },
   ],
   "timezone": "Europe/Stockholm",
