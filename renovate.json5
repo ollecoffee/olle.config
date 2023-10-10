@@ -44,25 +44,16 @@
         "major",
       ],
       "automerge": false,
-      // just re-states the default and ensures that PRs are really created - you can remove this line
-      // if you did not change "prCreation" elsewhere to some non-default value
-      "prCreation": "immediate",
     },
   ],
   "timezone": "Europe/Stockholm",
-  "platformAutomerge": true,
   "rebaseWhen": "behind-base-branch",
-  "rollbackPrs": true,
   "dependencyDashboard": true,
   "labels": ["dependencies"],
   "dependencyDashboardAutoclose": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "recreateWhen": "always",
-    "rebaseStalePrs": true,
-    "branchTopic": "lock-file-maintenance",
-    "commitMessageAction": "Lock file maintenance",
+    "schedule": ["before 10am on monday"],
     "automerge": true,
-    "prBodyDefinitions": {"Change": "All locks refreshed"}
   }
 }
