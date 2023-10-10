@@ -62,6 +62,8 @@
     "rebaseStalePrs": true,
     "branchTopic": "lock-file-maintenance",
     "commitMessageAction": "Lock file maintenance",
+    "schedule": ["before 10am on monday"],
+    "automerge": true,
     "prBodyDefinitions": {"Change": "All locks refreshed"}
   }
 }
