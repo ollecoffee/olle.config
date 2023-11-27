@@ -12,39 +12,27 @@
       "matchUpdateTypes": [
         "minor",
         "patch",
-        "digest"
+        "digest",
+        "pin",
+        "pinDigest",
+        "bump",
+        "replacement",
       ],
       "automerge": true,
+      "matchDatasources": ["npm, bun"],
+    },
+    {
+      "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major version",
+      "matchUpdateTypes": [
+        "major",
+      ],
+      "automerge": false,
       "matchDatasources": ["npm, bun"],
     },
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
       "matchDatasources": ["npm, bun"],
-    },
-    {
-      "description": "Disables the creation of branches/PRs for any minor/patch updates etc. of Renovate bot",
-      "matchPaths": [
-        "renovate-update-notification/Dockerfile"
-      ],
-      "matchUpdateTypes": [
-        "pin",
-        "digest",
-        "rollback",
-        "minor",
-        "patch",
-      ],
-      "automerge": true,
-    },
-    {
-      "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
-      "matchPaths": [
-        "renovate-update-notification/Dockerfile"
-      ],
-      "matchUpdateTypes": [
-        "major",
-      ],
-      "automerge": false,
     },
   ],
   "timezone": "Europe/Stockholm",
