@@ -17,6 +17,8 @@
         "pinDigest",
         "bump",
         "replacement",
+        "lockFileMaintenance",
+        "rollback",
       ],
       "automerge": true,
       "matchDatasources": ["npm, bun"],
