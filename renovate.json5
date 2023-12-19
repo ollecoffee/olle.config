@@ -7,7 +7,6 @@
   "assignees": [
     "ollegz"
   ],
-  "baseBranches": ["main"],
   "timezone": "Europe/Stockholm",
   "rebaseWhen": "behind-base-branch",
   "dependencyDashboard": true,
