@@ -7,6 +7,37 @@
   "assignees": [
     "ollegz"
   ],
+  "packageRules": [
+    {
+      "description": "Automatically merge minor and patch-level updates",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest",
+        "pin",
+        "pinDigest",
+        "bump",
+        "replacement",
+        "lockFileMaintenance",
+        "rollback",
+      ],
+      "automerge": true,
+      "matchDatasources": ["npm, bun"],
+    },
+    {
+      "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major version",
+      "matchUpdateTypes": [
+        "major",
+      ],
+      "automerge": false,
+      "matchDatasources": ["npm, bun"],
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true,
+      "matchDatasources": ["npm, bun"],
+    },
+  ],
   "timezone": "Europe/Stockholm",
   "rebaseWhen": "behind-base-branch",
   "dependencyDashboard": true,
