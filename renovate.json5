@@ -22,7 +22,7 @@
         "rollback",
       ],
       "automerge": true,
-      "matchDatasources": ["npm, bun"],
+      "matchDatasources": ["npm", "bun"],
     },
     {
       "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major version",
@@ -30,12 +30,12 @@
         "major",
       ],
       "automerge": false,
-      "matchDatasources": ["npm, bun"],
+      "matchDatasources": ["npm", "bun"],
     },
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
-      "matchDatasources": ["npm, bun"],
+      "matchDatasources": ["npm", "bun"],
     },
   ],
   "timezone": "Europe/Stockholm",
