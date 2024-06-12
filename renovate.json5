@@ -5,7 +5,7 @@
     "helpers:pinGitHubActionDigestsToSemver",
   ],
   "assignees": [
-    "ollegkz"
+    "ollecoffee"
   ],
   "packageRules": [
     {
