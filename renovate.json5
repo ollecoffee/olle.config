@@ -2,49 +2,19 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
+    "customManagers:githubActionsVersions",
     "helpers:pinGitHubActionDigestsToSemver",
-  ],
-  "assignees": [
-    "ollecoffee"
-  ],
-  "packageRules": [
-    {
-      "description": "Automatically merge minor and patch-level updates",
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "digest",
-        "pin",
-        "pinDigest",
-        "bump",
-        "replacement",
-        "lockFileMaintenance",
-        "rollback",
-      ],
-      "automerge": true,
-      "matchDatasources": ["npm", "bun", "github-actions"],
-    },
-    {
-      "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major version",
-      "matchUpdateTypes": [
-        "major",
-      ],
-      "automerge": false,
-      "matchDatasources": ["npm", "bun", "github-actions"],
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true,
-      "matchDatasources": ["npm", "bun"],
-    },
-  ],
-  "timezone": "Europe/Stockholm",
-  "rebaseWhen": "behind-base-branch",
-  "dependencyDashboard": true,
-  "labels": ["dependencies"],
-  "vulnerabilityAlerts": {
-    "enabled": true
-  },
-  "osvVulnerabilityAlerts": true,
-  "dependencyDashboardOSVVulnerabilitySummary": "all",
+    "security:openssf-scorecard",
+    "schedule:daily",
+    ":approveMajorUpdates",
+    ":assignAndReview(ollecoffee)",
+    ":disableRateLimiting",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":labels(renovate,dependencies)",
+    ":pinAllExceptPeerDependencies",
+    ":prNotPending",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":separateMultipleMajorReleases"
+  ]
 }
