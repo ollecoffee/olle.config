@@ -16,5 +16,8 @@
   ],
   "schedule": [
     "* * ? ? ? ?"
-    ]
+    ],
+  "automergeSchedule": [
+    "* * ? ? ? ?"
+  ],
 }
