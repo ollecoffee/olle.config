@@ -12,6 +12,7 @@
     ":labels(renovate,dependencies)",
     ":rebaseStalePrs",
     ":semanticCommits",
+    ":schedule:hourly",
     ":separateMultipleMajorReleases"
   ]
 }
