@@ -12,7 +12,8 @@
     ":labels(renovate,dependencies)",
     ":rebaseStalePrs",
     ":semanticCommits",
-    ":schedule(* * * * * *)",
     ":separateMultipleMajorReleases"
-  ]
+  ],
+  "schedule": [
+    "? ? ? ? ? ?"
 }
