@@ -5,7 +5,6 @@
     "customManagers:githubActionsVersions",
     "helpers:pinGitHubActionDigestsToSemver",
     "security:openssf-scorecard",
-    "schedule:daily",
     ":assignee(ollecoffee)",
     ":dependencyDashboard",
     ":disableRateLimiting",
