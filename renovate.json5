@@ -12,6 +12,7 @@
     ":labels(renovate,dependencies)",
     ":rebaseStalePrs",
     ":semanticCommits",
-    ":separateMultipleMajorReleases"
+    ":separateMultipleMajorReleases",
+    ":separatePatchReleases",
   ],
 }
