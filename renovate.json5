@@ -7,6 +7,7 @@
     "security:openssf-scorecard",
     "schedule:daily",
     ":assignee(ollecoffee)",
+    ":automergeAll",
     ":dependencyDashboard",
     ":disableRateLimiting",
     ":enableVulnerabilityAlertsWithLabel(security)",
