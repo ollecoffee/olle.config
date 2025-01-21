@@ -11,6 +11,7 @@
     ":disableRateLimiting",
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":labels(renovate,dependencies)",
+    ":maintainLockFilesWeekly",
     ":rebaseStalePrs",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
