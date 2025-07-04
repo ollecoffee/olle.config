@@ -6,8 +6,6 @@
     "helpers:pinGitHubActionDigestsToSemver",
     "security:openssf-scorecard",
     ":assignAndReview(ollecoffee)",
-    ":automergeAll",
-    ":automergePr",
     ":dependencyDashboard",
     ":disableRateLimiting",
     ":enableVulnerabilityAlertsWithLabel(security)",
