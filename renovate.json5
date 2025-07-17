@@ -9,7 +9,6 @@
     ":dependencyDashboard",
     ":disableRateLimiting",
     ":enableVulnerabilityAlertsWithLabel(security)",
-    ":labels(renovate,dependencies)",
     ":rebaseStalePrs",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
