@@ -15,4 +15,10 @@
     ":separateMultipleMajorReleases",
     ":separatePatchReleases",
   ],
+  packageRules: [
+    {
+      matchDatasources: ["npm"],
+      minimumReleaseAge: "0 days",
+    },
+  ],
 }
