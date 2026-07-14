@@ -20,5 +20,10 @@
       matchDatasources: ["npm"],
       minimumReleaseAge: "0 days",
     },
+    {
+      matchManagers: ["deno"],
+      minimumReleaseAge: "2 days",
+      internalChecksFilter: "strict",
+    },
   ],
 }
