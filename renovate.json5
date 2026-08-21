@@ -25,5 +25,12 @@
       minimumReleaseAge: "2 days",
       internalChecksFilter: "strict",
     },
+    {
+      // Renovate has no single release to age for lockFileMaintenance, so the deno
+      // rule above leaves renovate/stability-days pending forever and blocks automerge.
+      matchUpdateTypes: ["lockFileMaintenance"],
+      minimumReleaseAge: "0 days",
+      internalChecksFilter: "none",
+    },
   ],
 }
