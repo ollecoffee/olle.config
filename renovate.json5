@@ -17,10 +17,6 @@
   ],
   packageRules: [
     {
-      matchDatasources: ["npm"],
-      minimumReleaseAge: "0 days",
-    },
-    {
       matchManagers: ["deno"],
       minimumReleaseAge: "2 days",
       internalChecksFilter: "strict",
@@ -31,6 +27,12 @@
       matchUpdateTypes: ["lockFileMaintenance"],
       minimumReleaseAge: "0 days",
       internalChecksFilter: "none",
+      automerge: true,
     },
   ],
+  lockFileMaintenance: {
+    // config:best-practices gives this a 4h window (Mon 00:00-03:59 UTC), narrow
+    // enough that a repo whose renovate run lands outside it waits another week.
+    schedule: ["before 9am on monday"],
+  },
 }
