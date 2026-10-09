@@ -17,13 +17,15 @@
   ],
   packageRules: [
     {
-      matchManagers: ["deno"],
+      // Gate on the datasource, not the manager: these repos have moved between bun,
+      // deno and pnpm, and the supply-chain buffer should survive the next move.
+      matchDatasources: ["npm"],
       minimumReleaseAge: "2 days",
       internalChecksFilter: "strict",
     },
     {
-      // Renovate has no single release to age for lockFileMaintenance, so the deno
-      // rule above leaves renovate/stability-days pending forever and blocks automerge.
+      // Renovate has no single release to age for lockFileMaintenance, so the rule
+      // above leaves renovate/stability-days pending forever and blocks automerge.
       matchUpdateTypes: ["lockFileMaintenance"],
       minimumReleaseAge: "0 days",
       internalChecksFilter: "none",
